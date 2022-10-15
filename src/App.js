@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+// upload file form
+import { Upload } from "./components/uploadfile/uploadForm";
+// floating shadowed menu button
+import { FloatingActionButtons } from "./components/floatmenu/floatmenu.js";
+// accordions 
+import { CustomizedAccordions } from "./components/accordion/accordion";
+// floating bottom menu
+import { LabelBottomNavigation } from "./components/bottommenu/bottommenu";
+// swipeable dialog
+import { SwipeableEdgeDrawer } from "./components/swipable/swipable";
+// inbox container
+import { PermanentDrawerLeft} from "./components/drawerleft/drawerleft"
+// dialog tool
+import { SpeedDialTooltipOpen } from "./components/dialogtool/dialogtool"
+// vertical timeline
+import { CustomizedTimeline } from "./components/timeline/timeline";
+// treeview
+import { BarTreeView } from "./components/treeview/treeview";
+// switch
+import { CustomizedSwitches } from "./components/switch/switch";
+// date time pickers
+import { NativePickers } from "./components/datetime/datetime";
+
+function App ()
+{
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BarTreeView />
     </div>
   );
 }
