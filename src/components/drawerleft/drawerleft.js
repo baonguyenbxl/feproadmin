@@ -26,8 +26,8 @@ export const PermanentDrawerLeft= ()=>
         sx={ { width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` } }
       >
         <Toolbar>
-          <Typography variant="h6" noWrap component="div">
-            Permanent drawer
+          <Typography variant="h3"  noWrap component="div">
+            e-Pro Greffe
           </Typography>
         </Toolbar>
       </AppBar>
@@ -44,7 +44,6 @@ export const PermanentDrawerLeft= ()=>
         anchor="left"
       >
         <Toolbar />
-        <Divider />
         <List>
           { [ 'Inbox', 'Starred', 'Send email', 'Drafts' ].map( ( text, index ) => (
             <ListItem key={ text } disablePadding>
@@ -57,7 +56,6 @@ export const PermanentDrawerLeft= ()=>
             </ListItem>
           ) ) }
         </List>
-        <Divider />
         <List>
           { [ 'All mail', 'Trash', 'Spam' ].map( ( text, index ) => (
             <ListItem key={ text } disablePadding>

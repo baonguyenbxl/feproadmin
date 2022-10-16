@@ -22,12 +22,16 @@ import { BarTreeView } from "./components/treeview/treeview";
 import { CustomizedSwitches } from "./components/switch/switch";
 // date time pickers
 import { NativePickers } from "./components/datetime/datetime";
+// STEPPER
+import { CustomizedSteppers } from "./components/stepper/stepper"
+// left panel
+import { HiddenDrawer } from "./components/hiddenpanel/hiddenpanel";
 
 function App ()
 {
   return (
     <div className="App">
-      <BarTreeView />
+      <FloatingActionButtons />
     </div>
   );
 }
